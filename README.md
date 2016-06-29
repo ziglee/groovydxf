@@ -2,9 +2,11 @@
 
 A Groovy library to write AutoCad files (DXF R12 version only)
 
+Inspired by EzDXF Python lib that can be found at https://pythonhosted.org/ezdxf/index.html
+
 ## Sample code
 
-```
+```groovy
 def drawing = new Drawing()
 def modelSpace = drawing.modelSpace
 
@@ -37,9 +39,7 @@ modelSpace.addBlockRef('TEST', [5, 5], ['rotation': 45f])
 drawing.save('sample.dxf')
 ```
 
-Copyright © 2000 Cassio Landim
-This work is free. You can redistribute it and/or modify it under the
-terms of the Do What The Fuck You Want To Public License, Version 2,
-as published by Sam Hocevar. See the COPYING file for more details.
+Copyright © 2000 Cassio Landim.
+This work is free. You can redistribute it and/or modify it under the terms of the Do What The Fuck You Want To Public License, Version 2, as published by Sam Hocevar. See the COPYING file for more details.
 
 ![Alt text](http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-1.png "WTFPL")
