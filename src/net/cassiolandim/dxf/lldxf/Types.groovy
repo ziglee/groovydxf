@@ -18,12 +18,12 @@ class Types {
         Float y
         Float z
 
-        if (value[0] instanceof Integer || value[0] instanceof Float || value[0] instanceof Double)
+        if (value[0] instanceof Integer || value[0] instanceof Float || value[0] instanceof Double || value[0] instanceof BigDecimal)
             x = value[0]
         else
             x = Float.parseFloat(value[0])
 
-        if (value[1] instanceof Integer || value[1] instanceof Float || value[1] instanceof Double)
+        if (value[1] instanceof Integer || value[1] instanceof Float || value[1] instanceof Double || value[1] instanceof BigDecimal)
             y = value[1]
         else
             y = Float.parseFloat(value[1])
@@ -31,7 +31,7 @@ class Types {
         def point = [x, y]
 
         if (value.size() > 2) {
-            if (value[2] instanceof Integer || value[2] instanceof Float || value[2] instanceof Double)
+            if (value[2] instanceof Integer || value[2] instanceof Float || value[2] instanceof Double || value[2] instanceof BigDecimal)
                 z = value[2]
             else
                 z = Float.parseFloat(value[2])
