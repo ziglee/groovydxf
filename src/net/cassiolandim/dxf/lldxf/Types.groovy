@@ -45,6 +45,7 @@ class Types {
     static Closure<Float> toFloat = { value ->
         if (value instanceof Float) return value
         if (value instanceof Double) return value.toFloat()
+        if (value instanceof BigDecimal) return value.toFloat()
         return Float.parseFloat(value)
     }
 
